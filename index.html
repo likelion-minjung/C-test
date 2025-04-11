@@ -193,8 +193,8 @@ line-height: 30px; /* Adjusted to match height */
 
 <p>
 <div class="timer-container">
-    <button id="start-timer" class="timer-button">Start 20-minute timer</button>
-    <div id="timer-display" class="timer-display">20:00</div>
+    <button id="start-timer" class="timer-button">Start 30-minute timer</button>
+    <div id="timer-display" class="timer-display">30:00</div>
 </div>
 <p>
 
@@ -299,7 +299,7 @@ For many stud <input type="text" id="test1_25"></span>
 <span class="nowrap">use t<input type="text" id="test1_91"></span>
 <span class="nowrap">rest o<input type="text" id="test1_92"></span>
 <span class="nowrap">the fac<input type="text" id="test1_93"></span>
-<span class="nowrap">narrow do<input type="text" id="test1_94"></span>
+<span class="nowrap">to narrow do<input type="text" id="test1_94"></span>
 <span class="nowrap">the sele<input type="text" id="test1_95"></span>
 <span class="nowrap">to cho<input type="text" id="test1_96"></span>
 <span class="nowrap">the per<input type="text" id="test1_97"></span>
@@ -715,11 +715,11 @@ test1_224: "e",
 
     // Timer logic
     let timer;
-    let timeRemaining = 20 * 60; // 20 minutes in seconds
+    let timeRemaining = 30 * 60; // 30 minutes in seconds
 
     document.getElementById('start-timer').addEventListener('click', function() {
         clearInterval(timer); // Clear any existing timer
-        timeRemaining = 20 * 60; // Reset the time
+        timeRemaining = 30 * 60; // Reset the time
         document.getElementById('start-timer').textContent = 'Time remaining';
         document.getElementById('start-timer').classList.remove('expired');
         document.getElementById('timer-display').classList.remove('expired');
